@@ -8,6 +8,7 @@ namespace MyCoffeeApp.ViewModels
 {
     public class CoffeeEquimentViewModel : BindableObject
     {
+        // ViewModel
         public CoffeeEquimentViewModel()
         {
             IncreaseCount = new Command(OnIncrease);
