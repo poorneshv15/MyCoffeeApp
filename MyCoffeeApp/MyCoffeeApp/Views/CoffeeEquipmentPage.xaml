@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Viewmodels="clr-namespace:MyCoffeeApp.ViewModels"
+             x:Class="MyCoffeeApp.Views.CoffeeEquipmentPage"
+             x:DataType="Viewmodels:CoffeeEquimentViewModel">
+    <ContentPage.BindingContext>
+        <Viewmodels:CoffeeEquimentViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label BackgroundColor="Pink" Text="{Binding DisplayCount, Mode=TwoWay}"  TextColor="Black"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+            <Button BackgroundColor="Beige" x:Name="Button"  Command="{Binding IncreaseCount, Mode=TwoWay}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
